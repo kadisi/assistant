@@ -7,5 +7,7 @@ FROM node:16
 WORKDIR /app
 
 ADD . .
+RUN npm install --save-dev webpack
 RUN npm install
-ENTRYPOINT ["npm","run", "build:prod"]
+#ENTRYPOINT ["npm","run", "build:prod"]
+ENTRYPOINT ["npm","run", "build:version:04aab45"]

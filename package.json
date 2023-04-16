@@ -6,6 +6,7 @@
   "scripts": {
     "build:dev": "webpack --mode development --env version=$(./get-version.sh)",
     "build:prod": "webpack --mode production --env version=$(./get-version.sh)",
+    "build:version:04aab45": "webpack --mode production --env version=04aab45",
     "deploy:staging": "./deploy.sh .env.staging",
     "deploy:production": "./deploy.sh .env.production",
     "staging": "npm run build:prod && npm run deploy:staging",
@@ -32,7 +33,7 @@
     "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",
-    "webpack": "^5.75.0",
+    "webpack": "^5.79.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
   },

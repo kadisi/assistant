@@ -1,3 +1,6 @@
+
+#!/bin/bash
+
 if [ -z "$1" ]; then
     echo "Usage: $0 <env-file>"
     exit 1
