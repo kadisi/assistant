@@ -25,3 +25,6 @@ image:
 	# enable qemu for arm64 build
 	# https://github.com/docker/buildx/issues/464#issuecomment-741507760
 	docker build . -t registry.cn-zhangjiakou.aliyuncs.com/kadisi/treasure:chatgpt-assistant 
+
+push-image: image
+	docker push registry.cn-zhangjiakou.aliyuncs.com/kadisi/treasure:chatgpt-assistant
