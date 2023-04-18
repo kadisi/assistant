@@ -1,5 +1,5 @@
 export const getModels = (apiKey) => {
-    const endpoint = 'https://api.openai.com/v1/models'
+    const endpoint = 'https://kadisi.top/openapi/proxy/v1/models'
 
     return fetch(endpoint, {
         method: 'GET',
@@ -12,7 +12,7 @@ export const getModels = (apiKey) => {
 }
 
 export const chatCompletion = (apiKey, data) => {
-    const endpoint = 'https://api.openai.com/v1/chat/completions'
+    const endpoint = 'https://kadisi.top/openapi/proxy/v1/chat/completions'
 
     if (!data.model) {
         data.model = 'gpt-3.5-turbo'
@@ -33,7 +33,7 @@ export const chatCompletion = (apiKey, data) => {
 }
 
 export const chatCompletionStream = (apiKey, data, callback) => {
-    const endpoint = 'https://api.openai.com/v1/chat/completions'
+    const endpoint = 'https://kadisi.top/openapi/proxy/v1/chat/completions'
 
     if (!data.model) {
         data.model = 'gpt-3.5-turbo'
