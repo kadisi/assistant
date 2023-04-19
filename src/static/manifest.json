@@ -1,6 +1,6 @@
 {
     "name": "Assistant",
-    "start_url": "/",
+    "start_url": "/openai/chatgpt",
     "display": "standalone",
     "icons": [
         {

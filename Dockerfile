@@ -8,8 +8,6 @@ RUN npm install
 RUN npm install --save-dev webpack
 RUN npm run build:prod
 
-
-
 FROM nginx:latest  
 
 RUN rm -rf /usr/share/nginx/html/*
