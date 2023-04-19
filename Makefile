@@ -15,7 +15,7 @@
 
 .PHONY: image 
 
-all: image 
+all: push-image 
 
 # Build docker image
 image:
@@ -24,7 +24,7 @@ image:
 	fi
 	# enable qemu for arm64 build
 	# https://github.com/docker/buildx/issues/464#issuecomment-741507760
-	docker build . -t registry.cn-zhangjiakou.aliyuncs.com/kadisi/treasure:chatgpt-webapp
+	docker build . --no-cache -t registry.cn-zhangjiakou.aliyuncs.com/kadisi/treasure:chatgpt-webapp
 
 push-image: image
 	docker push registry.cn-zhangjiakou.aliyuncs.com/kadisi/treasure:chatgpt-webapp
